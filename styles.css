@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("pexels-karyme-frança-1037766.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li a:hover{
+    color: darkorange;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 40%;
+
+}
+.content h1{
+    color: white;
+    font-weight: bolder;
+}
+.content p{
+    color: white;
+    padding: 20px;
+    font-size: medium;
+}
+button{
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid green;
+    background: transparent;
+    color: white;
+}
+button:hover{
+    color: black;
+    background-color: darkorange;
+    cursor: pointer;
+    border: none;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 2.5s;
+}
+button:hover span{
+    width: 100%;
+}
