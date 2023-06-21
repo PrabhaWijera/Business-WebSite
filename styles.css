@@ -399,6 +399,15 @@ blockquote span{
 }
 
 @media screen and (min-width: 800px){
+    .insta-imgs{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+/*section3*/
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 
 }
 @media screen and (min-width: 992px){
@@ -479,6 +488,17 @@ blockquote span{
         margin-left: auto;
         margin-right: auto;
     }
+
+    /*section 3*/
+    .gallery{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+
+
+
+
 }
 @media screen and (max-width: 500px){
     .header{
@@ -527,3 +547,30 @@ blockquote span{
 }
 
 
+
+/*==================gallery html================*/
+.sectioin-three{
+    margin: 40px 0;
+}
+.single-img{
+    position: relative;
+    margin: 10px;
+}
+.single-img-content{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 5px 30px;
+    background: rgba(0,0,0,0.7);
+}
+.single-img-content h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/*=======================blog html=============================*/
+
+/*=============================contact==========================*/
