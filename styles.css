@@ -395,7 +395,11 @@ blockquote span{
 /*============media querys=-======================= */
 
 @media screen and (min-width: 678px){
-
+    .contact-middle{
+     display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
 }
 
 @media screen and (min-width: 800px){
@@ -407,6 +411,14 @@ blockquote span{
 .gallery{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.blog-wrapper-sm{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
 }
 
 }
@@ -454,8 +466,22 @@ blockquote span{
     }
     .search-icon i:hover{
         transform: scale(1.2);
-
     }
+
+    .contact-middle{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .contact-bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 40px;
+    }
+
+
+
+
+
 }
 @media screen and (min-width: 1000px){
 
@@ -473,6 +499,14 @@ blockquote span{
     .sec-one-left{
         height: 100%;
     }
+
+
+    .blog-wrapper-lg{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
 
 
 .footer-container{
@@ -494,12 +528,13 @@ blockquote span{
         grid-template-columns: repeat(3,1fr);
     }
 
-
-
-
-
-
 }
+
+    @media screen and (min-width: 1400px){
+    .blog-wrapper-sm{
+        grid-template-columns: repeat(4,1fr);
+    }
+    }
 @media screen and (max-width: 500px){
     .header{
         padding-bottom: 30px;
@@ -559,18 +594,117 @@ blockquote span{
 .single-img-content{
     position: absolute;
     bottom: 0;
-    top: 0;
     left: 0;
     right: 0;
     color: white;
     padding: 5px 30px;
-    background: rgba(0,0,0,0.7);
+
 }
 .single-img-content h3{
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
+    background-color: rgb(0,0,0,0.7);
 }
 /*=======================blog html=============================*/
 
+.section-four{
+    margin: 40px 0;
+}
+.blog{
+    margin: 40px 0;
+}
+.blog-content{
+    padding:25px ;
+    background: white;
+}
+.blog span{
+    display: block;
+}
+.badge{
+    background: var(--lightGreen);
+    width: 140px;
+    border-radius: 5px;
+    padding: 5px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.misc-info{
+    font-size: 14px;
+    color: var(--dark);
+    margin-top: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: 900;
+}
+.blog-text{
+    font-weight: 300;
+}
+
+
+
 /*=============================contact==========================*/
+
+.sectioin-five{
+    margin: 40px 0;
+}
+.section-five .container div{
+    margin: 20px 0;
+}
+.contact-top{
+    text-align: center;
+}
+.contact-top h3{
+    font-size: 28px;
+}
+
+.contact-top p{
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto;
+}
+.contact-middle div{
+    text-align: center;
+    padding: 25px 0;
+    background: var(--dark);
+    color: white;
+}
+.contact-middle div span{
+    display: block;
+}
+.contact-icon{
+    font-size:30px;
+}
+.contact-middle div span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-middle div p{
+    font-weight: 300;
+    opacity:0.7 ;
+}
+.contact-bottom{
+    margin-top: 50px !important;
+}
+form input[type= "text"], form input[type = "email"], form textarea{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid var(--lightGreen);
+    outline: none;
+    border-radius: 5px;
+}
+.contact-bottom{
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+
