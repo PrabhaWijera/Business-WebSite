@@ -392,8 +392,138 @@ blockquote span{
     font-size: 14px;
 }
 
+/*============media querys=-======================= */
+
+@media screen and (min-width: 678px){
+
+}
+
+@media screen and (min-width: 800px){
+
+}
+@media screen and (min-width: 992px){
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+}
+    .navBtn{
+        display: none;
+    }
+    .brand-and-navBtn{
+        flex: 0 0 10%;
+        background: none;
+    }
+    .top-nav{
+        flex: 0 1 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0s ease;
+        transform: translateY(0);
+        background: transparent;
+    }
+    .top-nav ul{
+        display: flex;
+
+    }
+    .top-nav ul li{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .about{
+        margin-top: 0;
+    }
+    .search-icon{
+        flex: 0 0 10%;
+        display: block;
+        display: flex;
+         justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        transition: var(--transition);
+    }
+    .search-icon i:hover{
+        transform: scale(1.2);
+
+    }
+}
+@media screen and (min-width: 1000px){
+
+.section-one .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+}
+    .sec-one-left{
+        align-self:center ;
+    }
+    .work-content{
+        margin-top:0;
+    }
+    .sec-one-left{
+        height: 100%;
+    }
 
 
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
 
+}
+@media screen and (min-width: 1200px){
+    .footer-container > div{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .header{
+        padding-bottom: 30px;
+    }
+    .social-icons{
+        display: none;
+    }
+    .about-content h3{
+        width: 100%;
+    }
+    .about-content blockquote{
+        font-size: 16px;
+        width: 100%;
+    }
+    .subs{
+        width: 280px;
+    }
+    .subs i{
+        display: none;
+    }
+    .subs input{
+        width: 100%;
+    }
+    .subs button{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    h3{
+      font-size: 20px !important;
+    }
+    p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .work-imgs{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
 
 
