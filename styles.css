@@ -1,90 +1,226 @@
+:root{
+    --white:#ddd;
+    --dark:#111;
+    --darkGrey:#474b4f;
+    --lightGrey:#6b6e70;
+    --lightGreen:#86c232;
+    --darkGreen:#61892F;
+    --transition: all 0.5s ease;
+}
 *{
-    margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Light",sans-serif;
 }
-.banner{
+body{
+    line-height: 1.6;
+}
+img{
     width: 100%;
-    height: 100vh;
-    background-image: url("pexels-karyme-frança-1037766.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: block;
 }
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 10px 0;
+}
+/*================================utility clases=========================*/
+.flex{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
-.logo{
-    width: 130px;
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+.btn{
+    background: var(--darkGreen);
+    border: none;
+    display: block;
+    width: 150px;
+    text-align: center;
+    color: var(--darkGreen);
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--darkGreen);
+    border-radius: 25px;
+    margin: 15px 0;
+    transition: var(--transition);
+}
+.btn:hover{
+    background: var(--darkGreen);
+    color: #fff;
+}
+.active{
+    color: var(--lightGreen) !important;
+}
+/*===========================end of utilty class=========================*/
+
+
+
+
+/*=============================header styles===================*/
+.header{
+    min-height: 100vh;
+    background: url("site.jpg") center/cover no-repeat;
+    color: white;
+}
+.top-nav a{
+    color: white;
+}
+.brand-and-navBtn{
+    background: black;
+    position: relative;
+    z-index: 999;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 15px 25px;
+    color: var(--white);
+}
+.brand-name{
+    letter-spacing: 5px;
     cursor: pointer;
 }
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+.navBtn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+.navBtn:hover{
+    background: white;
+    color: black;
+    transition: var(--transition);
+}
+.top-nav{
+    background: black;
+    transform: translateY(-600px);
+    transition: var(--transition);
+}
+.showNav{
+    transform: translateY(0);
+}
+.search-icon{
+    display: none;
+}
+.top-nav ul li{
+    padding: 10px 0;
+}
+.top-nav ul a{
     position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-.navbar ul li a:hover{
-    color: darkorange;
-}
-.content{
-    width: 100%;
-    position: absolute;
-    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
     text-align: center;
-    top: 40%;
+    display: block;
+}
+.top-nav ul a::after{
+    content: "";
+    height: 2px;
+    background: var(--lightGreen);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    transition: var(--transition);
+}
+.top-nav ul a:hover::after{
+    width: 100px;
+}
+
+.about{
+    margin-top: -160px;
+}
+.about-content img{
+    width: 140px;
+    height: 140px;
+    border-radius:50% ;
+}
+.about-img{
+    background: white;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.about-content h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--lightGreen);
+}
+.about-content h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    background: #111111;
+    width: 400px;
+    margin: 35px auto;
+    text-align: center;
+}
+blockquote{
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.9;
+    width: 60vw;
+    margin: 45px auto 15px auto;
+    text-align: center;
 
 }
-.content h1{
+blockquote span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--darkGreen);
+    font-weight: 300;
+    letter-spacing: 5px;
+    display: block;
+}
+.social-icons{
+    width: 350px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+}
+.social-icons ul a{
     color: white;
-    font-weight: bolder;
+    font-size: 30px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
 }
-.content p{
-    color: white;
-    padding: 20px;
-    font-size: medium;
+.social-icons ul{
+    display: flex;
+    justify-content: space-around;
 }
-button{
-    overflow: hidden;
-    position: relative;
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 3px solid green;
-    background: transparent;
-    color: white;
+.social-icons ul a:hover{
+    background: var(--lightGreen);
+    border-color: var(--lightGreen);;
 }
-button:hover{
-    color: black;
-    background-color: darkorange;
-    cursor: pointer;
-    border: none;
-}
-span{
-    background: #009688;
-    height: 100%;
-    width: 0%;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 2.5s;
-}
-button:hover span{
-    width: 100%;
-}
+
+
+
+
+
+/*============================end of header=========================*/
+
+/*====================main section=================*/
+
+/*================end of main section====================*/
