@@ -215,12 +215,185 @@ blockquote span{
     border-color: var(--lightGreen);;
 }
 
-
-
-
-
 /*============================end of header=========================*/
 
 /*====================main section=================*/
 
+/*section---1*/
+.section-one{
+    margin: 40px 0;
+    min-height: 100vh;
+}
+.sec-one-left{
+    height: 100vh;
+    background: url("man3.jpg") center/cover no-repeat;
+    box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow:0px 0px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-one-left div{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+}
+.sec-one-left div h3{
+    font-size:28px;
+    opacity: 0.9;
+}
+.sec-one-left div p{
+    font-weight: 300;
+    opacity: 0.8;
+}
+.sec-one-right h3{
+    color: var(--lightGrey);
+}
+.sec-one-right >h3{
+    text-align: center;
+}
+.sec-one-right p{
+    opacity: 0.9;
+    font-weight: 300;
+}
+.work-content{
+    margin: 50px 0;
+}
+.work-imgs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:20px ;
+}
+.work-img-1{
+    background: url("man1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    transition: var(--transition) ;
+}
+.work-img-2{
+    background: url("man2.jpg");
+    height: 400px;
+    transition: var(--transition) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.work-imgs div:hover{
+    box-shadow: 0 0 8px #000;
+    -webkit-box-shadow:0px 0px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
+}
+/*====section 2=======*/
+.section-two{
+    margin: 40px 0;
+}
+.section-two h2{
+    text-align: center;
+    font-size: 40px;
+}
+.section-two span{
+    color: var(--darkGrey);
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.insta-imgs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.insta-imgs > div{
+    position: relative;
+}
+.icon-overlay{
+    position: absolute;
+    top: 0;
+    color: white;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    background: rgba(134,194,50,0.4);
+    opacity: 0;
+    transition: var(--transition);
+}
+.insta-imgs> div:hover .icon-overlay{
+    opacity: 1;
+}
+
+
+
+
+
+
 /*================end of main section====================*/
+
+
+
+/*=====footer=========*/
+.footer{
+    background: var(--dark);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-container > div{
+    margin: 40px 0;
+}
+.footer-container h2{
+    color: var(--lightGreen);
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+.footer-container p{
+    opacity: 0.7;
+}
+.subs{
+    background: #000000;
+    width:350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+.subs i{
+    font-size: 26px;
+    flex: 10%;
+    display: block;
+}
+.subs input{
+    flex: 60%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 0 5px;
+    outline: 0;
+    color: white;
+}
+.subs button{
+    flex: 30%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight:bold;
+    background: var(--lightGreen);
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.subs button:hover{
+    color: white;
+}
+.footer>p{
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
+
