@@ -71,7 +71,7 @@ h1,h2,h3,h4,h5,h6,p{
 /*=============================header styles===================*/
 .header{
     min-height: 100vh;
-    background: url("site.jpg") center/cover no-repeat;
+    background: url("assets/img/Black Elegant Photography Logo.gif") center/cover no-repeat;
     color: white;
 }
 .top-nav a{
@@ -93,6 +93,9 @@ h1,h2,h3,h4,h5,h6,p{
 .brand-name{
     letter-spacing: 5px;
     cursor: pointer;
+
+
+
 }
 .navBtn{
     width: 40px;
@@ -150,7 +153,7 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius:50% ;
 }
 .about-img{
-    background: white;
+
     width: 150px;
     height: 150px;
     margin: 0 auto;
@@ -166,8 +169,8 @@ h1,h2,h3,h4,h5,h6,p{
     color: white;
     font-size: 30px;
     font-weight: 100;
-    background: #111111;
-    width: 400px;
+    background: transparent;
+    width: 600px;
     margin: 35px auto;
     text-align: center;
 }
@@ -192,6 +195,8 @@ blockquote span{
     width: 350px;
     margin: 40px auto 0 auto;
     padding-bottom: 30px;
+    position: relative;
+   top: 300px;
 }
 .social-icons ul a{
     color: white;
@@ -226,7 +231,7 @@ blockquote span{
 }
 .sec-one-left{
     height: 100vh;
-    background: url("man3.jpg") center/cover no-repeat;
+    background: url("assets/img/WhatsApp Image 2023-06-08 at 20.15.57.jpeg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow:0px 0px 14px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.75);
@@ -268,14 +273,14 @@ blockquote span{
     grid-column-gap:20px ;
 }
 .work-img-1{
-    background: url("man1.jpg");
+    background: url("assets/img/WhatsApp Image 2023-06-21 at 20.19.32.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
     transition: var(--transition) ;
 }
 .work-img-2{
-    background: url("man2.jpg");
+    background: url("assets/img/img.png");
     height: 400px;
     transition: var(--transition) ;
     background-repeat: no-repeat;
