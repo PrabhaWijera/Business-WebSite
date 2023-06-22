@@ -13,7 +13,10 @@ The webSite is Responsive 7 Different Size Devices
 ⚠️   This Imges are Only Examples Final Update is Near By soon!!!!!!  ⚠️
 
 HOME--->🏠
-![image](https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/3edc48a6-b18d-4c2b-b1ef-0fe890a887ff)
+![image](https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/bdfc11ff-4cff-431a-8f44-b02df1ec1ebc)
+![image](https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/a4655524-fc8a-45a6-bc4e-1e778f7424e8)
+![image](https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/18a7b0e4-5b4d-46c4-996f-028a61033f3e)
+
 
 Gallery --> 😲
 ![image](https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/eced1ffb-d896-4538-881d-447f2f3e14e3)
