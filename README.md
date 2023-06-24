@@ -32,5 +32,5 @@ Contact-->📲
 Footer-->👣
 ![image](https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/b4537fcd-26e6-4225-b13f-74b43750767c)
 
-Webhostting powerd BY--->
+Web hostting powerd BY--->
 https://paranoidcolors.000webhostapp.com/
