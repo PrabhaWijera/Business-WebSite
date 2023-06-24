@@ -35,3 +35,17 @@ Footer-->👣
 
 Web hostting powerd BY--->
 https://paranoidcolors.000webhostapp.com/
+
+
+
+Mobile View --->  
+
+https://github.com/PrabhaWijera/Business-WebSite/assets/106425954/eda8e96b-8c2c-416a-962d-56f346bd2cfb
+
+
+[Apple 13 Max-Pro]
+
+🌸On FIgma -->https://www.figma.com/proto/Ht58JErg2s62MPKXEiMeeL/Beat?page-id=0%3A1&type=design&node-id=1-3&viewport=786%2C227%2C0.33&scaling=scale-down&mode=design
+
+
+
